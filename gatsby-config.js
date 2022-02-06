@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `V-CODEs`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Vasil Hristov`,
+      summary: `who lives and works in Sofia building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -128,5 +128,23 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+// {
+//     resolve: `gatsby-plugin-google-fonts-v2`,
+//     options: {
+//       fonts: [
+//         {
+//           family: `Crimson Pro:wght@100;300;400;500;600;700`
+//         }
+//       ]
+//     }
+//   }
+{
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Kanit','Crimson Pro', 'Inter']
+        }
+      }
+    }
   ],
 }
